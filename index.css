@@ -1,0 +1,167 @@
+/* File: styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  
+  color: #333;
+}
+
+#app {
+  max-width: 1300px;
+  margin: auto;
+  padding: 20px;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    background-color:rgb(20, 23, 26);
+    padding:20px;
+    border-radius:5px;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color:white;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 80%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right:30px;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filters select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+}
+
+.employee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.employee-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+    background-color:grey;
+  box-shadow: 10px 5px 2px 7px rgba(0, 0, 0, 0.1);
+  }
+
+button{
+    height:30px;
+    width:100px;
+    border:1px solid black;
+    border-radius:8px;
+}
+
+.style-btn{
+    height:50px;
+    width:150px;
+    border:1px solid black;
+    border-radius:8px;
+    padding:5px;
+    
+    background-color: rgb(98, 155, 212);
+}
+
+.control{
+  display:flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+#addEmployeeBtn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-container {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#employeeForm input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+#employeeForm button {
+  padding: 8px 16px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#employeeForm button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+}
+
+#employeeForm button#cancelBtn {
+  background-color: #6c757d;
+  color: white;
+}
+
+#formErrors {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.pagination {
+  margin-top: 20px;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-bar {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
